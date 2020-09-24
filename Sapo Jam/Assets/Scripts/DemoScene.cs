@@ -48,13 +48,13 @@ public class DemoScene : MonoBehaviour
 
 	void onTriggerEnterEvent( Collider2D col )
 	{
-		Debug.Log( "onTriggerEnterEvent: " + col.gameObject.name );
+		//Debug.Log( "onTriggerEnterEvent: " + col.gameObject.name );
 	}
 
 
 	void onTriggerExitEvent( Collider2D col )
 	{
-		Debug.Log( "onTriggerExitEvent: " + col.gameObject.name );
+		//Debug.Log( "onTriggerExitEvent: " + col.gameObject.name );
 	}
 
 	#endregion
@@ -64,9 +64,11 @@ public class DemoScene : MonoBehaviour
 	void Update()
 	{
 		if( _controller.isGrounded )
-			_velocity.y = 0;
+		{   _velocity.y = 0;
+			_animator.Play(Animator.StringToHash("Idle"));
+		}
 
-		if( Input.GetKey( KeyCode.RightArrow)|| Input.GetKey(KeyCode.D))
+		if ( Input.GetKey( KeyCode.RightArrow)|| Input.GetKey(KeyCode.D))
 		{
 			normalizedHorizontalSpeed = 1;
 			if( transform.localScale.x < 0f )
