@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: PP Profile
+  m_Name: PP Profile 1
   m_EditorClassIdentifier: 
   components:
   - {fileID: 4341162032167092434}
@@ -37,7 +37,7 @@ MonoBehaviour:
     min: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 1.36
+    m_Value: 2.84
     min: 0
   scatter:
     m_OverrideState: 1
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   color:
     m_OverrideState: 1
-    m_Value: {r: 0, g: 0, b: 0, a: 1}
+    m_Value: {r: 0.076538086, g: 0, b: 1, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1
@@ -151,12 +151,12 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.235
+    m_Value: 0.292
     min: 0
     max: 1
   smoothness:
     m_OverrideState: 1
-    m_Value: 0.837
+    m_Value: 0.812
     min: 0.01
     max: 1
   rounded:
@@ -220,15 +220,15 @@ MonoBehaviour:
         - serializedVersion: 3
           time: 0
           value: 0
-          inSlope: 1
+          inSlope: 0
           outSlope: 1
           tangentMode: 0
           weightedMode: 0
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.6091644
-          value: 0.7657143
+          time: 0.43665767
+          value: 0.73142856
           inSlope: 1
           outSlope: 1
           tangentMode: 0
@@ -239,7 +239,7 @@ MonoBehaviour:
           time: 1
           value: 1
           inSlope: 1
-          outSlope: 1
+          outSlope: 0
           tangentMode: 0
           weightedMode: 0
           inWeight: 0
