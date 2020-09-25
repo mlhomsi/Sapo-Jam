@@ -39,6 +39,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Backlit
+    uniqueID: 333842781
+    locked: 0
+  - name: Dark
+    uniqueID: 2861428677
+    locked: 0
   - name: Background Beef
     uniqueID: 2510827575
     locked: 0
