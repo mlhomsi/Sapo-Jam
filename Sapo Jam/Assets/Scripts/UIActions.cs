@@ -5,12 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class UIActions : MonoBehaviour
 {
-    public void startGame()
+    public AudioSource audioSource;
+    public void loadScene(string sceneName)
     {
-        SceneManager.LoadScene("Intro");
+        audioSource.Play();
+        StartCoroutine(waitSound(sceneName));
     }
     public void exitGame()
     {
         Application.Quit();
+    }
+
+    private IEnumerator waitSound(string sceneName)
+    {
+        yield return new WaitUntil(()=>!audioSource.isPlaying);
+        SceneManager.LoadScene(sceneName);
     }
 }
