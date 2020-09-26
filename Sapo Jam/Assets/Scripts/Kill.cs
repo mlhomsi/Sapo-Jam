@@ -18,7 +18,7 @@ public class Kill : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Fall")
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         if (col.gameObject.tag == "Enemy")
         {
 
