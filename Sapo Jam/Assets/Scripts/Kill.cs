@@ -31,7 +31,7 @@ public class Kill : MonoBehaviour
             // else
             //{
             UnityEngine.Debug.Log("mort");
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             //}
 
         }
