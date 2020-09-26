@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8124866144627355398}
   m_Layer: 0
   m_Name: EnemyHello
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 382580741}
   - component: {fileID: 382580738}
   - component: {fileID: 382580744}
-  - component: {fileID: 382580742}
   m_Layer: 0
   m_Name: Untitled_Artwork 9
   m_TagString: Enemy
@@ -61,7 +60,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8124866145505474440}
   m_LocalRotation: {x: -0, y: -0, z: 0.85071397, w: -0.525629}
-  m_LocalPosition: {x: 41.2, y: 2, z: 128.4298}
+  m_LocalPosition: {x: 41.33, y: 2.13, z: 128.4298}
   m_LocalScale: {x: 0.35, y: 0.35, z: 1}
   m_Children: []
   m_Father: {fileID: 8124866144627355398}
@@ -167,7 +166,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.04532718, y: 4.0711317}
@@ -183,21 +182,9 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -5.9733195, y: 1.0635059}
   serializedVersion: 2
   m_Radius: 3.1280878
---- !u!114 &382580742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8124866145505474440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac10dc255ebd9495c92f6c5c79d2a593, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
