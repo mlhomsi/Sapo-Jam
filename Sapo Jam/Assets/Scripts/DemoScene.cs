@@ -17,6 +17,7 @@ public class DemoScene : MonoBehaviour
 
 	private CharacterController2D _controller;
 	private Animator _animator;
+	private AudioSource _jumpAudioSource;
 	private RaycastHit2D _lastControllerColliderHit;
 	private Vector3 _velocity;
 
@@ -25,7 +26,7 @@ public class DemoScene : MonoBehaviour
 	{
 		_animator = GetComponent<Animator>();
 		_controller = GetComponent<CharacterController2D>();
-
+		_jumpAudioSource = GetComponent<AudioSource>();
 		// listen to some events for illustration purposes
 		_controller.onControllerCollidedEvent += onControllerCollider;
 		_controller.onTriggerEnterEvent += onTriggerEnterEvent;
@@ -66,6 +67,7 @@ public class DemoScene : MonoBehaviour
 		if( _controller.isGrounded )
 		{   _velocity.y = 0;
 			_animator.Play(Animator.StringToHash("Idle"));
+			_jumpAudioSource.Play();
 		}
 
 		if ( Input.GetKey( KeyCode.RightArrow)|| Input.GetKey(KeyCode.D))
